@@ -16,6 +16,6 @@ class Stay < Formula
 
   test do
     assert_match "stay #{version}", shell_output("#{bin}/stay --version")
-    assert_match "Usage: stay", shell_output("#{bin}/stay --help")
+    assert_match "Usage: stay", shell_output("#{bin}/stay --help 2>&1")
   end
 end
