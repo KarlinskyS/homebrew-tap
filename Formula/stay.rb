@@ -1,8 +1,8 @@
 class Stay < Formula
   desc "macOS CLI that prevents idle by posting real mouse movement events"
   homepage "https://github.com/KarlinskyS/stay-awake-cli"
-  url "https://github.com/KarlinskyS/stay-awake-cli/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "95afb97c65e3a30b2447fd2a4118a688ec1e1d5a669e0b8a182134a6d9219aae"
+  url "https://github.com/KarlinskyS/stay-awake-cli/archive/refs/tags/v0.1.2.tar.gz"
+  sha256 "ed1f96edc47054688db3755026e88152abdb1db423492afbdad3f6b9b4007ac4"
   license "MIT"
 
   depends_on "go" => :build
