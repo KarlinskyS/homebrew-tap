@@ -1,8 +1,8 @@
 class Stay < Formula
   desc "macOS CLI that prevents idle by posting real mouse movement events"
   homepage "https://github.com/KarlinskyS/stay-awake-cli"
-  url "https://github.com/KarlinskyS/stay-awake-cli/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "751c36c981d35cfd8b3380fae761abb7f179b0dfdbcbc7aeed64ad26bd1daa2c"
+  url "https://github.com/KarlinskyS/stay-awake-cli/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "95afb97c65e3a30b2447fd2a4118a688ec1e1d5a669e0b8a182134a6d9219aae"
   license "MIT"
 
   depends_on "go" => :build
@@ -16,5 +16,6 @@ class Stay < Formula
 
   test do
     assert_match "stay #{version}", shell_output("#{bin}/stay --version")
+    assert_match "Usage: stay", shell_output("#{bin}/stay --help")
   end
 end
